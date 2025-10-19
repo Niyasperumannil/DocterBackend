@@ -1,0 +1,56 @@
+.stats-section {
+  background-color: #030c68; /* deep navy blue */
+  color: #ffffff;
+  padding: 4rem 0;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-family: "Urbanist", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.stat-label {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #e0e7ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+  .stat-label {
+    font-size: 16px;
+  }
+}

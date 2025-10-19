@@ -1,0 +1,83 @@
+.admin-auth-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-auth-container h2 {
+  text-align: center;
+  color: #10244b;
+  margin-bottom: 20px;
+}
+
+.auth-message {
+  text-align: center;
+  color: #3f6cd1;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.admin-auth-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #10244b;
+}
+
+.admin-auth-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.admin-auth-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a7cd2;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.admin-auth-form button:hover {
+  background-color: #3559a1;
+}
+
+.toggle-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #10244b;
+}
+
+.toggle-link {
+  color: #4a7cd2;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .admin-auth-container {
+    padding: 20px;
+    margin: 40px 10px;
+  }
+}

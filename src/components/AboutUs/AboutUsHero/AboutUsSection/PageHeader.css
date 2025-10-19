@@ -1,0 +1,60 @@
+.about-us-page {
+  background-color: #bcd0ee;
+  min-height: 20vh;
+  padding: 150px 120px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0px;
+}
+    
+.header-section {
+  text-align: center;
+  border-bottom: 1px solid #0c0e10;
+  padding-bottom: 20px;
+}
+
+.header-section h1 {
+ font-family: Urbanist, Helvetica, Arial, sans-serif;
+font-size: 60px;
+font-weight: 600;
+line-height: 69px;
+color: rgb(16, 36, 75);
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.breadcrumb-home {
+font-family: Inter, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.2px;
+color: rgb(147, 160, 175);
+}
+
+.breadcrumb-separator {
+  color: #4f6fae; /* A soft blue for separator */
+}
+
+.breadcrumb-current {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.2px;
+color: rgb(16, 36, 75);
+}
+@media (max-width: 768px) {
+  .header-section h1 {
+    font-size: 32px;
+  }
+
+  .breadcrumb {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

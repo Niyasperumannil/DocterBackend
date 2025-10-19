@@ -1,0 +1,120 @@
+.admin-bookings-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.admin-bookings-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #10244b;
+}
+
+/* Status messages */
+.status-msg {
+  text-align: center;
+  font-weight: 500;
+  color: #10244b;
+  margin: 15px 0;
+}
+
+.status-msg.error {
+  color: red;
+}
+
+/* Date filter panel */
+.date-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.date-filter input[type="date"] {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.reset-btn {
+  padding: 6px 12px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #16a085;
+}
+
+/* Bookings table */
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.bookings-table th,
+.bookings-table td {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #10244b;
+}
+
+.bookings-table th {
+  background-color: #4a7cd2;
+  color: #fff;
+  font-weight: 600;
+}
+
+.bookings-table tr:nth-child(even) {
+  background-color: #f0f4fa;
+}
+
+.bookings-table tr:hover {
+  background-color: #e0e7f0;
+  transition: background-color 0.3s ease;
+}
+
+/* Delete button */
+.delete-btn {
+  padding: 6px 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .date-filter {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .bookings-table th,
+  .bookings-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

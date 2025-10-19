@@ -1,0 +1,114 @@
+.services-section {
+  background: #fff;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Individual Service Card */
+.service-card {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 20px;
+  padding: 25px 30px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.service-title {
+  font-family: Urbanist, Helvetica, Arial, sans-serif;
+font-size: 20px;
+font-weight: 600;
+line-height: 32px;
+color: rgb(16, 36, 75);
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 30.4px;
+color: rgb(147, 160, 175);
+  line-height: 1.7;
+}
+
+/* ========== RESPONSIVE DESIGN (3-width layout) ========== */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 20px 25px;
+  }
+
+  .service-title {
+    font-size: 17px;
+  }
+
+  .service-description {
+    font-size: 14px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-card {
+    border-radius: 15px;
+    padding: 20px;
+  }
+
+  .service-title {
+    font-size: 16px;
+  }
+
+  .service-description {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 40px 15px;
+  }
+
+  .services-container {
+    gap: 15px;
+  }
+
+  .service-card {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .service-title {
+    font-size: 15px;
+  }
+
+  .service-description {
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+}

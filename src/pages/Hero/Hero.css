@@ -1,0 +1,13 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+    background: #fff;
+
+}
+
+/* Reset styles for child components if needed */
+.hero-container > * {
+  width: 100%;
+}

@@ -1,0 +1,183 @@
+.contact-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 5rem 8%;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.contact-left {
+  flex: 1 1 50%;
+  max-width: 700px;
+}
+
+.contact-subtitle {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+color: rgb(74, 124, 210);
+  margin-bottom: 1rem;
+}
+
+.contact-title {
+ font-family: Urbanist, Helvetica, Arial, sans-serif;
+font-size: 45px;
+font-weight: 600;
+line-height: 57.6px;
+color: rgb(16, 36, 75);
+  margin-bottom: 1.5rem;
+}
+
+.contact-description {
+ font-family: Inter, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 30.4px;
+color: rgb(147, 160, 175);
+  margin-bottom: 2.5rem;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 3rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.info-icon {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 30.4px;
+color: rgb(16, 36, 75);
+  margin-top: 4px;
+}
+
+.info-item h4 {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 30.4px;
+color: rgb(16, 36, 75);
+  margin-bottom: 0.3rem;
+}
+
+.info-item p {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 30.4px;
+color: rgb(147, 160, 175);
+  margin: 0;
+}
+
+.contact-right {
+  flex: 1 1 40%;
+  background-color: #f1f5fb;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  max-width: 500px;
+}
+
+.contact-right h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #10244b;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 0.6rem;
+font-family: Inter, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(33, 37, 41);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #0056ff;
+  background-color: #fff;
+}
+
+.contact-form button {
+  background-color: #0056ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #003fba;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 4rem 5%;
+    gap: 3rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    max-width: 100%;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 34px;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-right {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+}

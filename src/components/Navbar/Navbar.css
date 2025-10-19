@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1a44; /* Dark blue background */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- Utility Classes --- */
+.desktop-only {
+    display: none; /* Default hidden for mobile */
+}
+
+/* --- Header Container (Base Styles) --- */
+.header-container {
+    width: 100%;
+    padding: 10px 20px; /* Mobile Padding */
+    background-color: #5d5e62; /* Solid Dark Blue for mobile header */
+    color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* --- Logo Styling --- */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    color: #5591ff; /* Bright blue color */
+    margin-right: 5px;
+    font-size: 28px;
+}
+
+.logo-text {
+    font-weight: normal;
+    text-transform: lowercase;
+}
+
+/* --- Mobile Menu Icon (Hamburger/Close) --- */
+.hamburger-menu {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    padding: 5px;
+}
+
+.close-icon {
+    font-size: 40px;
+    line-height: 0.5;
+    font-weight: 300;
+}
+
+/* --- MOBILE NAVIGATION STYLES --- */
+.mobile-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    background-color: #0d1a44;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-nav.open {
+    max-height: 80vh; /* Shows the menu */
+    overflow-y: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-nav-list {
+    padding: 0;
+}
+
+.mobile-nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+}
+
+.mobile-nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mobile-nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Arrow styling */
+.dropdown-arrow {
+    font-size: 18px;
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+    font-family: monospace;
+}
+
+.dropdown-arrow.open {
+    transform: rotate(0deg);
+}
+
+/* Sub-Menu Styling */
+.mobile-dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #081131;
+    padding-left: 0;
+}
+
+.mobile-dropdown-menu.open {
+    max-height: 300px;
+    padding-bottom: 10px;
+}
+
+.mobile-dropdown-menu li a {
+    display: block;
+    padding: 10px 25px 10px 40px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.mobile-dropdown-menu li a:hover {
+    color: #5591ff;
+}
+
+/* --- DESKTOP STYLES (min-width: 993px) --- */
+@media (min-width: 993px) {
+
+    .desktop-only {
+        display: block;
+    }
+
+    .header-container {
+        padding: 10px 160px;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .header-container::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        backdrop-filter: blur(8px);
+        z-index: -1;
+    }
+
+    .mobile-nav {
+        display: none !important;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-start;
+        margin-left: 220px;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-item {
+        position: relative;
+        padding: 10px 0;
+        font-size: 16px;
+        cursor: pointer;
+        transition: color 0.3s;
+        color: #000; /* 🔁 Changed to black */
+    }
+
+    .nav-item:hover {
+        color: #000; /* 🔁 Changed to black */
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        min-width: 200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        z-index: 200;
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .dropdown-menu.open {
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .dropdown-menu li a {
+        color: #000; /* 🔁 Changed to black */
+        padding: 10px 20px;
+        display: block;
+        font-size: 15px;
+    }
+
+    .dropdown-menu li a:hover {
+        background-color: #f0f0f0;
+        color: #000; /* 🔁 Changed to black */
+    }
+
+    .book-appointment-btn {
+        background-color: #5591ff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .book-appointment-btn:hover {
+        background-color: #3a72d8;
+    }
+}
+

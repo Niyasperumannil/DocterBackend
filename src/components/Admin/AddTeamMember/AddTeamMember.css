@@ -1,0 +1,290 @@
+/* ===== Container Styles ===== */
+.team-admin-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Add/Edit Form ===== */
+.add-member-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.add-member-container h2 {
+  text-align: center;
+  color: #10244b;
+  margin-bottom: 20px;
+}
+
+.add-member-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #10244b;
+}
+
+.add-member-form input[type="text"],
+.add-member-form textarea,
+.add-member-form input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.add-member-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-member-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a7cd2;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.add-member-form button:hover {
+  background-color: #3559a1;
+}
+
+.cancel-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #aaa;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #888;
+}
+
+.message {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #10244b;
+}
+
+/* ===== Image Preview ===== */
+.image-preview {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/* ===== Team Members Display ===== */
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #10244b;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Wrapper for arrows and scrolling */
+.team-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f0f4fa;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+/* Horizontal scroll grid */
+.team-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1px 120px 10px 120px;
+  max-width: 100%;
+  scrollbar-width: none;
+}
+
+.team-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card styles */
+.card {
+  min-width: 260px;
+  flex: 0 0 auto;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #10244b;
+}
+
+.card-role {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0a0c0e;
+  margin: 5px 0;
+}
+
+.card-paragraph {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Edit/Delete buttons inside card */
+.card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #4a7cd2;
+}
+
+.edit-btn:hover {
+  background-color: #3559a1;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Arrows */
+.arrow {
+  background-color: #fff;
+  border: none;
+  font-size: 28px;
+  color: #10244b;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 2;
+}
+
+.arrow:hover {
+  background-color: #e0e7f0;
+}
+
+.arrow.left {
+  margin-left: 10px;
+}
+
+.arrow.right {
+  margin-right: 10px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+
+  .team-grid {
+    padding: 1px 20px 10px 20px;
+  }
+
+  .card {
+    min-width: 220px;
+  }
+
+  .card-name {
+    font-size: 16px;
+  }
+
+  .card-role {
+    font-size: 13px;
+  }
+
+  .card-paragraph {
+    font-size: 12px;
+  }
+
+  .mobile-next-arrow {
+    display: block;
+    text-align: right;
+    margin: 10px 20px 20px auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a7cd2;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-next-arrow {
+    display: none;
+  }
+}
