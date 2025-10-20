@@ -67,7 +67,7 @@ const Header = () => {
               <NavLink to="#">Pages</NavLink>
               {/* Desktop Pages Dropdown */}
               <ul className={`dropdown-menu ${isDesktopPagesDropdownOpen ? 'open' : ''}`}>
-                <li><NavLink to="/pages/general-dentistry">General Dentistry</NavLink></li>
+                <li><NavLink to="/pages/GeneralDentistry">General Dentistry</NavLink></li>
                 <li><NavLink to="/pages/CosmeticDentistry">Cosmetic Dentistry</NavLink></li>
                 <li><NavLink to="/pages/PediatricDentistry">Pediatric Dentistry</NavLink></li>
               </ul>
@@ -108,7 +108,7 @@ const Header = () => {
           {/* Services */}
           <li className="mobile-nav-item has-dropdown">
             <div className="mobile-nav-link" onClick={toggleDropdown(setIsServicesDropdownOpen, isServicesDropdownOpen)}>
-              <NavLink to="/services">Services</NavLink>
+              <NavLink to="/Aboutus">About us</NavLink>
               <span className={`dropdown-arrow ${isServicesDropdownOpen ? 'open' : ''}`}>&#9587;</span>
             </div>
           </li>
@@ -129,23 +129,23 @@ const Header = () => {
             </div>
             {/* Dropdown Menu - Sub-items appear below the main link */}
             <ul className={`mobile-dropdown-menu pages-menu ${isPagesDropdownOpen ? 'open' : ''}`}>
-               <li><NavLink to="GeneralDentistry">General Dentistry</NavLink></li>
-               <li><NavLink to="/pages/cosmetic-dentistry">Cosmetic Dentistry</NavLink></li>
-               <li><NavLink to="/pages/pediatric-dentistry">Pediatric Dentistry</NavLink></li>
+               <li><NavLink to="/pages/GeneralDentistry">General Dentistry</NavLink></li>
+               <li><NavLink to="/pages/CosmeticDentistry">Cosmetic Dentistry</NavLink></li>
+               <li><NavLink to="/pages/PediatricDentistry">Pediatric Dentistry</NavLink></li>
             </ul>
           </li>
 
           {/* Blog */}
           <li className="mobile-nav-item">
             <div className="mobile-nav-link">
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="/Blog">Blog</NavLink>
             </div>
           </li>
           
           {/* Contact */}
           <li className="mobile-nav-item">
             <div className="mobile-nav-link">
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/Contact">Contact</NavLink>
             </div>
           </li>
         </ul>
