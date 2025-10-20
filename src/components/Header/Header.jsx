@@ -23,7 +23,7 @@ const Home = () => {
           <h1 className="hero-title">
             Elevating Smiles with Expert Care and a Gentle Touch
           </h1>
-          <NavLink to="/book" className="hero-btn">
+          <NavLink to="/BookAppointmentScreen" className="hero-btn">
             Book Appointment
           </NavLink>
           <div className="hero-rating">
